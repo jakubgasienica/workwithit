@@ -11,59 +11,25 @@
 * {
 	margin: 0;
 	font-family: "Hubballi", cursive;
-    color: var(--font-color);
+	color: var(--font-color);
 }
 
-header {
-	display: flex;
-	justify-content: space-evenly;
-	align-items: center;
-	background: var(--header);
-	width: 100%;
-	z-index: 1;
-	position: fixed;
-    box-shadow: 0 2px 4px var(--header);
-    opacity: 0.8;
-    cursor: pointer;
-}
-
-@media screen and (min-width: 768px) {
-	header {
-		opacity: 1
-	}
-}
-
-header:hover {
-    opacity: 1;
-	height: 10vh;
-	transition: 1s;
-}
-
-header input {
-	background-color: #12597348;
-    border-radius: 10px;
-}
-header img {
-	width: 60px;
-}
 
 p {
-    font-size: 1.5em;
+	font-size: 1.5em;
 }
 
-h3{
-    font-size: 2em;
+h3 {
+	font-size: 2em;
 }
 
 main {
-    padding: 50px;
+	padding: 50px;
 	display: flex;
-    flex-direction: column;
-    align-items: center;
+	flex-direction: column;
+	align-items: center;
 	background-color: var(--background);
 }
-
-
 
 .wrapper {
 	background-color: var(--background);
@@ -87,7 +53,7 @@ main {
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
-    flex-wrap: wrap;
+	flex-wrap: wrap;
 }
 
 .job-offer img {
@@ -95,5 +61,6 @@ main {
 }
 
 .job-offer p {
-    padding: 10px;
+	padding: 10px;
 }
+
