@@ -8,21 +8,19 @@ header {
 	z-index: 1;
 	position: fixed;
 	box-shadow: 0 2px 4px var(--header);
-	cursor: pointer;
-	transform: translateY();
-	top: 92%;
+	bottom: 0;
 	border-radius: 15px;
 }
 
 .filter-box-buttons {
-	width: 94%;
+	width: 100%;
 	display: flex;
 	flex-direction: column;
 	gap: 10px;
-	position: fixed;
+	position: absolute;
 	z-index: 1;
-	top: 78%;
-	left: 3%;
+	bottom: 100%;
+	left: 0;
 	background-color: var(--header);
 	border-radius: 10px;
 }
@@ -32,7 +30,7 @@ header {
 	background-color: var(--header);
 	border-radius: 10px;
 	font-size: large;
-}
+    }
 
 @media screen and (min-width: 768px) {
 	header {
@@ -45,10 +43,10 @@ header input {
 	background-color: #12597348;
 	border-radius: 10px;
 	z-index: 1;
-	position: fixed;
-	top: 85%;
-	left: 3%;
-	width: 92%;
+	position: absolute;
+	bottom: 100%;
+	left: 0;
+	width: 98%;
 	height: 30px;
 	font-size: large;
 }

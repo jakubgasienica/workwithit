@@ -1,41 +1,31 @@
+// TODO: install better comments extension
+// TODO: create folders per file type
+
 const searchIcon = document.querySelector(".fa-magnifying-glass");
 const filterIcon = document.querySelector(".fa-filter");
 const searchInput = document.querySelector(".search-input");
 const filterBox = document.querySelectorAll(".filter-box-button");
 
-const hamburger = document.querySelector('.hamburger');
-const hamburgerInner = document.querySelector('.hamburger__inner');
-const menu = document.querySelector('.menu');
+const hamburger = document.querySelector(".hamburger");
+const hamburgerInner = document.querySelector(".hamburger__inner");
+const menu = document.querySelector(".menu");
 
 let flagSearch = false;
 let flagFilter = false;
 
 searchIcon.addEventListener("click", () => {
-	if (flagSearch === false) {
-		searchInput.style.display = "flex";
-		flagSearch = true;
-	} else {
-		searchInput.style.display = "none";
-		flagSearch = false;
-	}
+	searchInput.style.display = flagSearch ? "flex" : "none";
+	flagSearch = !flagSearch;
 });
 
 filterIcon.addEventListener("click", () => {
-	if (flagFilter === false) {
-		filterBox.forEach(button => {
-            button.style.display = "flex";
-        });
-		flagFilter = true;
-	} else {
-		filterBox.forEach(button => {
-            button.style.display = "none";
-        });
-		flagFilter = false;
-	}
-    
+	filterBox.forEach(button => {
+		button.style.display = flagFilter ? "flex" : "none";
+	});
+	flagFilter = !flagFilter;
 });
 
-hamburger.addEventListener('click', () => {
-    hamburger.classList.toggle('hamburger--active');
-    menu.classList.toggle('menu--active');
-})
+hamburger.addEventListener("click", () => {
+	hamburger.classList.toggle("hamburger--active");
+	menu.classList.toggle("menu--active");
+});
