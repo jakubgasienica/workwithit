@@ -1,0 +1,63 @@
+/* transfrom: scale  */
+
+
+
+
+.index__main {
+	padding: 50px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: var(--background);
+}
+
+.wrapper {
+	background-color: var(--background);
+	height: 100vh;
+	display: flex;
+	font-size: 4em;
+}
+.wrapper img {
+	margin-top: 50px;
+	height: 100%;
+}
+.wrapper__text {
+	margin: 40px;
+	align-self: center;
+}
+
+.job-offer {
+	width: 80vw;
+	border-bottom: 3px solid var(--header);
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.job-offer img {
+	width: 200px;
+}
+
+.job-offer p {
+	padding: 10px;
+}
+
+
+
+
+
+@media screen and (min-width: 768px) {
+	.job-offer {
+		margin: 50px 50px 50px 300px;
+	}
+	.description__offer {
+		display: flex;
+		flex-direction: column;
+		width: 75vw;
+		margin-left: 15vw;
+		gap: 30px;
+	}
+	
+
+}

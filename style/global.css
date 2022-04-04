@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Hubballi&display=swap");
+
+:root {
+	--color1: #122618;
+	--header: #125973;
+	--font-color: #e49915;
+	--color4: #eccd58;
+	--background: #f8f3c0;
+}
+
+* {
+	margin: 0;
+	font-family: "Hubballi", cursive;
+	color: var(--font-color);
+}
+
+p {
+	font-size: 1.5em;
+}
+
+h3 {
+	font-size: 2em;
+}

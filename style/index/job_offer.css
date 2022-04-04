@@ -1,0 +1,45 @@
+.index__main {
+	padding: 50px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: var(--background);
+}
+
+.wrapper {
+	background-color: var(--background);
+	height: 100vh;
+	display: flex;
+	font-size: 4em;
+}
+.wrapper img {
+	margin-top: 50px;
+	height: 100%;
+}
+.wrapper__text {
+	margin: 40px;
+	align-self: center;
+}
+
+.offer {
+	width: 80vw;
+	border-bottom: 3px solid var(--header);
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.offer__logo__img {
+	width: 200px;
+}
+
+.offer p {
+	padding: 10px;
+}
+
+@media screen and (min-width: 768px) {
+	.offer {
+		margin: 50px 50px 50px 300px;
+	}
+}

@@ -1,0 +1,10 @@
+{
+	"extends": "airbnb", // "eslint:recommended"
+	"env": { "browser": true },
+    "rules": {
+        "no-param-reassign": "off",
+        "indent": [2, "tab"],
+        "no-tabs": 0,
+        "linebreak-style": 0
+    }
+}

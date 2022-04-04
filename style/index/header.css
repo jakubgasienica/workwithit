@@ -1,0 +1,145 @@
+header {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin-left: 3%;
+	background: var(--header);
+	width: 94%;
+	z-index: 1;
+	position: fixed;
+	box-shadow: 0 2px 4px var(--header);
+	bottom: 0;
+	border-radius: 15px;
+}
+
+.filter-box-buttons {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	position: absolute;
+	z-index: 1;
+	bottom: 100%;
+	left: 0;
+	background-color: var(--header);
+	border-radius: 10px;
+}
+
+.filter-box-button {
+	background-color: var(--header);
+	border-radius: 10px;
+	font-size: large;
+}
+
+.search-input {
+	background-color: #12597348;
+	border-radius: 10px;
+	font-size: large;
+}
+
+.search-input-container {
+	z-index: 1;
+	position: absolute;
+	bottom: 100%;
+	left: 0;
+	width: 98%;
+	height: 30px;
+	display: none;
+}
+
+.search-input-container.visible {
+	display: block;
+	z-index: 1;
+	position: absolute;
+	bottom: 100%;
+	width: 98%;
+	height: 30px;
+}
+
+header img {
+	width: 60px;
+}
+
+.filter-box-select {
+	display: none;
+}
+
+.filter-box.visible .filter-box-buttons {
+	display: block;
+}
+
+.filter-box .filter-box-buttons {
+	display: none;
+}
+
+@media screen and (min-width: 768px) {
+	header {
+		opacity: 0.8;
+		top: 0;
+		height: 10vh;
+		width: 100%;
+		margin-left: 0;
+		border-radius: 0%;
+	}
+	header > *:hover {
+		cursor: pointer;
+	}
+
+	header:hover {
+		opacity: 1;
+	}
+
+	.search-box {
+		flex: 1;
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+	}
+
+	.search-input {
+		display: block;
+		width: 100%;
+		box-sizing: border-box;
+	}
+
+	.search-input-container {
+		display: block;
+		width: 0;
+		transition: width 0.3s 0.1s ease-in-out;
+		overflow: hidden;
+		position: static;
+	}
+
+	.search-input-container.visible {
+		width: 150px;
+		position: static;
+	}
+
+	.header__logo {
+		flex: 3;
+		display: flex;
+		justify-content: center;
+	}
+
+	.fa-magnifying-glass:active {
+		transform: translateX(50px);
+		transition: transform 0.3s 0.1s ease-in-out;
+	}
+	.filter-box {
+		flex: 3;
+		display: flex;
+		justify-content: center;
+	}
+
+	.filter-box-select {
+		font-size: large;
+		background-color: var(--header);
+	}
+	.filter-box-select {
+		display: block;
+	}
+
+	.filter-box-buttons {
+		display: none;
+	}
+}

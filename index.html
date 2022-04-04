@@ -1,66 +1,71 @@
 <!DOCTYPE html>
 <html lang="pl">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style/global.css" />
+		<link rel="stylesheet" href="style/index/hamburger.css" />
+		<link rel="stylesheet" href="style/index/header.css" />
+		<link rel="stylesheet" href="style/index/job_offer.css" />
+		<title>Work with IT</title>
+		<script
+			src="https://kit.fontawesome.com/baaff749b6.js"
+			crossorigin="anonymous"
+		></script>
+	</head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style_job_offer.css" />
-    <link rel="stylesheet" href="style_hamburger.css" />
-    <link rel="stylesheet" href="style_header.css" />
-    <title>Work with IT</title>
-    <script src="https://kit.fontawesome.com/baaff749b6.js" crossorigin="anonymous"></script>
-</head>
+	<body>
+		<button class="hamburger">
+			<span class="hamburger__box">
+				<span class="hamburger__inner"></span>
+			</span>
+		</button>
 
-<body>
-    <button class="hamburger">
-        <span class="hamburger__box">
-            <span class="hamburger__inner"></span>
-        </span>
-    </button>
-    
-    <div class="menu">
-        <ul>
-            <h3>menu</h3>
-            <li>tu</li>
-            <li>jeszcze</li>
-            <li>cos</li>
-            <li>wrzuce</li>
-            <li>!</li>
-            
-        </ul>
-    </div>
+		<div class="menu">
+			<ul>
+				<h3>menu</h3>
+				<li>tu</li>
+				<li>jeszcze</li>
+				<li>cos</li>
+				<li>wrzuce</li>
+				<li>!</li>
+			</ul>
+		</div>
 
-    <header>
-        <img src="logo_workwithit.png">
-        <div class="search-box">
-            <input class="search-input">
-            <i class="fa-solid fa-magnifying-glass"></i>
+		<header>
+			<div class="header__logo">
+				<img src="assets/images/logo_workwithit.png" />
+			</div>
 
-        </div>
+			<div class="search-box">
+				<div class="search-input-container">
+					<input class="search-input" />
+				</div>
+				<i class="fa-solid fa-magnifying-glass"></i>
+			</div>
 
-        <!-- <div class="social-media-box">
+			<!-- <div class="social-media-box">
             <i class="fa-brands fa-facebook-square"></i>
             <i class="fa-brands fa-linkedin"></i>
-        </div> -->
+        	</div> -->
 
-        <div class="filter-box">
-            <i class="fa-solid fa-filter"></i>
-            <div class="filter-box-buttons">
-                <button class="filter-box-button">latest</button>
-                <button class="filter-box-button">highest salary</button>
-                <button class="filter-box-button">lowest salary</button>
-            </div>
-        </div>
+			<div class="filter-box">
+				<select class="filter-box-select">
+					<option selected>latest</option>
+					<option>highest salary</option>
+					<option>lowest salary</option>
+				</select>
+				<i class="fa-solid fa-filter"></i>
+				<div class="filter-box-buttons">
+					<button class="filter-box-button">latest</button>
+					<button class="filter-box-button">highest salary</button>
+					<button class="filter-box-button">lowest salary</button>
+				</div>
+			</div>
+		</header>
 
-
-    </header>
-    
-
-
-
-
-    <!-- <div class="wrapper">
+		<!-- <div class="wrapper">
         <div class="wrapper__img">
             <img src="logo_workwithit_big.png">
         </div>
@@ -70,103 +75,118 @@
         </div>
     </div> -->
 
+		<main class="index__main">
 
-    <main>
-        <section class="job-offer">
-            <div class="job-offer__firm">
-                <img src="Comarch_Logo.png">
-            </div>
+			<section class="offer">
+				<div class="offer__logo">
+					<a href="offer.html">
+						<img class="offer__logo__img" href="offer.html" src="assets/images/Comarch_Logo.png" />
+					</a>
+				</div>
 
-            <h3>Junior front-end developer</h3>
+				<h3 class="offer__title">Junior front-end developer</h3>
 
-            <div class="job-offfer_city">
-                <p>Wrocław</p>
-            </div>
-            <div class="job-offer__stack">
-                <p>Java Script</p>
-            </div>
-            <div class="job-offer__salary">
-                <p>10000 PLN</p>
-            </div>
-            <div class="job-offer__type">
-                <p>Full time</p>
-            </div>
-        </section>
+				<div class="offer__city">
+					<p>Wrocław</p>
+				</div>
 
-        <section class="job-offer">
-            <div class="job-offer__firm">
-                <img src="Comarch_Logo.png">
-            </div>
+				<div class="offer__stack">
+					<p>Java Script</p>
+				</div>
 
-            <h3>Junior front-end developer</h3>
+				<div class="offer__salary">
+					<p>10000 PLN</p>
+				</div>
 
-            <div class="job-offfer_city">
-                <p>Wrocław</p>
-            </div>
-            <div class="job-offer__stack">
-                <p>Java Script</p>
-            </div>
-            <div class="job-offer__salary">
-                <p>10000 PLN</p>
-            </div>
-            <div class="job-offer__type">
-                <p>Full time</p>
-            </div>
-        </section>
+				<div class="offer__type">
+					<p>Full time</p>
+				</div>
+			</section>
 
 
-        <section class="job-offer">
-            <div class="job-offer__firm">
-                <img src="Comarch_Logo.png">
-            </div>
+			<section class="offer">
+				<div class="offer__logo">
+					<a href="offer.html">
+						<img class="offer__logo__img" href="offer.html" src="assets/images/Comarch_Logo.png" />
+					</a>
+				</div>
 
-            <h3>Junior front-end developer</h3>
+				<h3>Junior front-end developer</h3>
 
-            <div class="job-offfer_city">
-                <p>Wrocław</p>
-            </div>
-            <div class="job-offer__stack">
-                <p>Java Script</p>
-            </div>
-            <div class="job-offer__salary">
-                <p>10000 PLN</p>
-            </div>
-            <div class="job-offer__type">
-                <p>Full time</p>
-            </div>
-        </section>
+				<div class="offer__city">
+					<p>Wrocław</p>
+				</div>
+
+				<div class="offer__stack">
+					<p>Java Script</p>
+				</div>
+
+				<div class="offer__salary">
+					<p>10000 PLN</p>
+				</div>
+
+				<div class="offer__type">
+					<p>Full time</p>
+				</div>
+			</section>
+
+			<section class="offer">
+				<div class="offer__logo">
+					<a href="offer.html">
+						<img class="offer__logo__img" href="offer.html" src="assets/images/Comarch_Logo.png" />
+					</a>
+				</div>
+
+				<h3>Junior front-end developer</h3>
+
+				<div class="offer__city">
+					<p>Wrocław</p>
+				</div>
+
+				<div class="offer__stack">
+					<p>Java Script</p>
+				</div>
+
+				<div class="offer__salary">
+					<p>10000 PLN</p>
+				</div>
+
+				<div class="offer__type">
+					<p>Full time</p>
+				</div>
+			</section>
+
+			<section class="offer">
+				<div class="offer__logo">
+					<a href="offer.html">
+						<img class="offer__logo__img" href="offer.html" src="assets/images/Comarch_Logo.png" />
+					</a>
+				</div>
+
+				<h3>Junior front-end developer</h3>
+
+				<div class="offer__city">
+					<p>Wrocław</p>
+				</div>
+
+				<div class="offer__stack">
+					<p>Java Script</p>
+				</div>
+
+				<div class="offer__salary">
+					<p>10000 PLN</p>
+				</div>
+
+				<div class="offer__type">
+					<p>Full time</p>
+				</div>
+			</section>
 
 
-        <section class="job-offer">
-            <div class="job-offer__firm">
-                <img src="Comarch_Logo.png">
-            </div>
 
-            <h3>Junior front-end developer</h3>
+		<script src="code.js"></script>
+		<script src="render-offer.js"></script>
+		<script src="fetch-offers.js"></script>
 
-            <div class="job-offfer_city">
-                <p>Wrocław</p>
-            </div>
-            <div class="job-offer__stack">
-                <p>Java Script</p>
-            </div>
-            <div class="job-offer__salary">
-                <p>10000 PLN</p>
-            </div>
-            <div class="job-offer__type">
-                <p>Full time</p>
-            </div>
-        </section>
-
-
-
-    </main>
-
-
-
-    <script src="code.js"></script>
-</body>
-
+	</body>
 </html>
-
-
